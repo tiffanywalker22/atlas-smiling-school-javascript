@@ -35,6 +35,15 @@
       crossorigin="anonymous"
     ></script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -181,24 +190,22 @@
           </div>
         </div>
       </section>
-      <section class="popular section d-flex align-items-center">
-        <div class="container">
+    </section>
+    <section class="popular section d-flex align-items-center">
+      <div class="container">
           <header class="section-header">
-            <h2 class="text-center">
-              Most
-              <span class="main-color">popular</span> tutorials
-            </h2>
+              <h2 class="text-center">
+                  Most <span class="main-color">popular</span> tutorials
+              </h2>
           </header>
-          <div class="loader"></div>
+          <div id="loader" class="loader"></div>
           <div class="carousel-container position-relative">
-            <div class="carousel-inner carousel-popular">
-            </div>
-            <div class="carousel-item-prev arrow-left"></div>
-            <div class="carousel-item-next arrow-right"></div>
-            <div class="carousel-item-next"></div>
+              <div class="carousel-inner carousel-popular"></div>
+              <button class="carousel-control-prev slick-prev slick-arrow" style="display: block;">Prev</button>
+              <button class="carousel-control-next slick-next slick-arrow" style="display: block;">Next</button>
           </div>
-        </div>
-      </section>
+      </div>
+  </section>
       <section class="smiles section">
         <div class="container">
           <header class="section-header">
@@ -263,21 +270,19 @@
       </section>
       <section class="popular section d-flex align-items-center">
         <div class="container">
-          <header class="section-header">
-            <h2 class="text-center">
-              <span class="main-color">Latest</span> videos
-            </h2>
-          </header>
-          <div class="loader"></div>
-          <div class="carousel-container position-relative">
-            <div class="carousel-inner carousel-popular">
+            <header class="section-header">
+                <h2 class="text-center">
+                  <span class="main-color">Latest</span> Videos
+                </h2>
+            </header>
+            <div id="loader" class="loader"></div>
+            <div class="carousel-container position-relative">
+                <div class="carousel-inner carousel-popular"></div>
+                <button class="carousel-item-prev slick-prev slick-arrow" style="display: block;">Prev</button>
+                <button class="carousel-item-next slick-next slick-arrow" style="display: block;">Next</button>
             </div>
-            <div class="carousel-item-prev arrow-left"></div>
-            <div class="carousel-item-next arrow-right"></div>
-            <div class="carousel-item-next"></div>
-          </div>
         </div>
-      </section>
+    </section>
     </main>
     <footer class="footer d-flex align-items-center justify-content-center">
       <div class="container">
